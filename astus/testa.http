@@ -1,0 +1,31 @@
+### Testa listagem
+
+http://localhost:8080/contacts
+
+### Testa retrieve
+
+GET http://localhost:8080/contacts/171
+
+### Testa create
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Teste bacana",
+    "email": "email@email.com",
+    "phone": "(111) 333-1111"
+}
+
+### Testa update
+PUT http://localhost:8080/contacts/171 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Teste perfeito",
+    "email": "email@email.com",
+    "phone": "(111) 333-1111"
+}
+
+### Testa delete
+http://localhost:8080/contacts
+
